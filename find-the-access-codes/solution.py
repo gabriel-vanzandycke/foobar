@@ -13,5 +13,3 @@ def solution(l):
                             count += 1
                             cache[j].append(k)
     return count
-
-print(solution([1, 2, 3, 4, 5, 6]))
