@@ -9,6 +9,7 @@ def solution(n):
         return (n << 1) + 1
     if (n+2) & (n+1) == 0:  # top right tree: n+2 is a power of 2
         return n+1
+    # solution of same position on the left tree, plus a power of 2 minus 1
     p = 2**((n+1).bit_length()-1)-1
     return solution((n & p) +1) + p
 
